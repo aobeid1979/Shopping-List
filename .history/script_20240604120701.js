@@ -71,19 +71,7 @@ function clearItems() {
     
 }
 
-function filterItems(e) {
-    const text = e.target.value.toLowerCase();
-    const items = itemList.querySelectorAll('li');
-
-    items.forEach(function(item) {
-        const itemName = item.firstChild.textContent.toLowerCase();
-        if (itemName.indexOf(text) != -1) {
-            item.style.display = 'flex';
-        } else {
-            item.style.display = 'none';
-        }
-    });
-}
+function 
 
 function checkUI() {
     const items = itemList.querySelectorAll('li');

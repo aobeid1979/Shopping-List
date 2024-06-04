@@ -78,7 +78,7 @@ function filterItems(e) {
     items.forEach(function(item) {
         const itemName = item.firstChild.textContent.toLowerCase();
         if (itemName.indexOf(text) != -1) {
-            item.style.display = 'flex';
+            item.style.display = 'block';
         } else {
             item.style.display = 'none';
         }
