@@ -50,9 +50,7 @@ function removeItem(e) {
 }
 
 function clearItems() {
-    while (itemList.firstChild) {
-        itemList.removeChild(itemList.firstChild);
-    }
+    while ()
 }
 
 // Event Listners

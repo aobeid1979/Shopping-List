@@ -49,11 +49,7 @@ function removeItem(e) {
     };
 }
 
-function clearItems() {
-    while (itemList.firstChild) {
-        itemList.removeChild(itemList.firstChild);
-    }
-}
+function clearBtn() {}
 
 // Event Listners
 

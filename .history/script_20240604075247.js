@@ -49,12 +49,6 @@ function removeItem(e) {
     };
 }
 
-function clearItems() {
-    while (itemList.firstChild) {
-        itemList.removeChild(itemList.firstChild);
-    }
-}
-
 // Event Listners
 
 itemForm.addEventListener('submit', addItem);
