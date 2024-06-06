@@ -34,11 +34,6 @@ function onAddItemSubmit(e) {
         itemToEdit.classList.remove('edit-mode');
         itemToEdit.remove();
         isEditMode = false;
-    } else {
-        if (checkIfItemExists(newItem)) {
-            alert('Item already exists');
-            return;
-        }
     }
 
     // Create item DOM element
@@ -89,11 +84,6 @@ function onClickItem(e) {
 } else {
     setItemToEdit(e.target);
 }
-}
-
-function checkIfItemExists(item) {
-    const itemFromStorage = getItemFromStorage();
-    return itemFromStorage.includes(item);
 }
 
 function setItemToEdit(item) {
@@ -184,8 +174,6 @@ function filterItems(e) {
 }
 
 function checkUI() {
-    itemInput.value = '';
-
     const items = itemList.querySelectorAll('li');
     if (items.length === 0) {
         clearBtn.style.display = 'none';
@@ -196,7 +184,7 @@ function checkUI() {
     }
 
     formBtn.innerHTML = '<i class="fa-solid fa-plus"></i> Add Item';
-    formBtn.style.backgroundColor = '#333';
+    formBtn.style.backgroundColor = '#0';
 }
 
 

@@ -35,10 +35,7 @@ function onAddItemSubmit(e) {
         itemToEdit.remove();
         isEditMode = false;
     } else {
-        if (checkIfItemExists(newItem)) {
-            alert('Item already exists');
-            return;
-        }
+        
     }
 
     // Create item DOM element
